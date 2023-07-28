@@ -1,0 +1,36 @@
+@font-face {
+  font-family: FontLogo;
+  src: url(../fonts/Foqha.ttf), url(../fonts/Foqha.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: FontText;
+  src: url(../fonts/Neutra-Text-Book.ttf), url(../fonts/Neutra-Text-Book.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: FontText;
+  src: url(../fonts/Neutra-Text-Italic.ttf), url(../fonts/Neutra-Text-Italic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: FontHead;
+  src: url(../fonts/Benzin-Bold.otf), url(../fonts/Benzin-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: FontText;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=style-typo.css.map */

@@ -1,0 +1,243 @@
+*img, *svg *video{
+	vertical-align: middle !important;
+}
+.section1 {
+	position: relative;
+	display: block;
+	align-items: center;
+	min-height: 250vh;
+
+	.sticky {
+		position: sticky;
+		display: flex;
+		top: 0;
+		width: 100vw;
+		min-height: 100vh;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.playground-container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+
+		.play-text {
+			display: inline-flex;
+			justify-content: flex-start;
+
+		}
+
+		.ground {
+			display: inline-flex;
+			justify-content: flex-end;
+
+			nav {
+				position: relative;
+				display: flex;
+				align-items: center;
+				width: 150px;
+				margin: 0 10px;
+				padding-top: 6%;
+
+				img {
+					position: relative;
+					width: 100%;
+				}
+			}
+			p {
+				line-height: 1;
+			}
+		}
+		.head {
+			font-family: FontHead;
+			font-size: 250px;
+			margin: 0px;
+			text-transform: none;
+			text-shadow: 3px 0px 20px var(--b);
+			z-index: calc(100 - var(--i));
+		}
+		.head.y {
+			margin-left: -15px;
+		}
+
+	}
+
+	.text {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		translate: -50% 0;
+		width: 450px;
+		z-index: 99;
+
+		p {
+			margin: 0;
+			span {
+				color: var(--gr);
+			}
+		}
+	}
+
+}
+.section2 {
+	position: relative;
+	display: block;
+	width: 100vw;
+	margin-top: 50px;
+
+	.sticky-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		.sticky-text {
+			position: sticky;
+			top: -1px;
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-top: 10vh;
+			padding-bottom: 10vh;
+
+
+			.content-container{
+				--h: 180px;
+				height: var(--h);
+				overflow: hidden;
+				// background-color: orangered;
+
+				.marquee-container {
+					position: relative;
+					display: flex;
+					flex-direction: row;
+
+					.marquee-content {
+						position: relative;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						padding-left: calc(var(--h)/3);
+						padding-right: calc(var(--h)/3);
+					}	
+				}
+				p {
+					position: relative;
+					font-family: FontHead;
+					font-size: var(--h);
+					margin-top: calc(var(--h)*(-.5/2));
+					margin-bottom: calc(var(--h)*(-.5/2));
+					white-space: nowrap;
+				}
+			}
+			
+			.fill-text {
+				color: var(--b);
+				// background-color: skyblue;
+			}
+
+			.stroke-text {
+				color: var(--t);
+				text-shadow:
+					1px 0px var(--b),
+					1px 1px var(--b),
+					0px 1px var(--b),
+					-1px 1px var(--b),
+					-1px 0px var(--b),
+					-1px -1px var(--b),
+					0px -1px var(--b),
+					1px -1px var(--b);
+				// background-color: teal;
+
+				.marquee-container {
+					// right: 200%;
+				}
+			}
+
+			.time-text {
+				position: relative;
+				--time: calc(var(--h)/2);
+				height: var(--time);
+				color: var(--b);
+				margin-top: 20px;
+				overflow: visible;
+
+				.text-container {
+					position: relative;
+					display: block;
+
+					.text {
+						position: absolute;
+						top: 0;
+						display: block;
+						padding-left: 5vw;
+						overflow: hidden;
+
+						p {
+							font-size: var(--time);
+							margin: 0;
+						}
+					}
+
+					.text:nth-of-type(2n-1) {
+						right: 0;
+						padding-left: 0;
+						padding-right: 5vw;
+					}
+				}
+			}
+		}
+	}
+	
+	.thumb-container {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding-top: 90vh;
+		padding-bottom: 20vh;
+
+		.content {
+			position: relative;
+			width: 55%;
+			min-width: 400px;
+
+			a {
+				position: relative;
+				display: inline-block;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				aspect-ratio: 4/3;
+				overflow: hidden;
+
+				video, img {
+					position: relative;
+					width: 100%;
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+
+		.content:nth-of-type(2n) {
+			margin-left: auto;
+		}
+		.content{
+
+			span.distance {
+				position: relative;
+				display: block;
+				height: 600px;
+				// background-color: orangered;
+			}
+		}
+	}
+}

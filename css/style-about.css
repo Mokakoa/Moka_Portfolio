@@ -1,0 +1,262 @@
+.section1 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.section1 .move-text {
+  margin-left: 50%;
+  margin-bottom: 280px;
+  margin-top: 350px;
+  max-width: 610px;
+}
+.section1 .move-text span {
+  color: var(--gr);
+}
+.section1 .hello {
+  --h: 250px;
+}
+.section1 .hello .text h1 {
+  font-family: FontHead;
+  font-size: var(--h);
+  line-height: 1;
+  white-space: nowrap;
+  margin: 0;
+}
+.section1 .hello .text h1:nth-of-type(2) {
+  margin-bottom: 300px;
+}
+
+.section2 {
+  position: relative;
+}
+.section2 .image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.section2 .image-container img {
+  width: 100%;
+  opacity: 0;
+  vertical-align: middle !important;
+}
+.section2 .image-container .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+.section2 .image-container .chatbox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  translate: -50% -50%;
+  top: 0;
+  width: 5.5vw;
+}
+.section2 .image-container .chatbox .img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.section2 .image-container .chatbox .img img {
+  width: 100%;
+  opacity: 1;
+}
+.section2 .image-container .chatbox .text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 81%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-top: 5%;
+}
+.section2 .image-container .chatbox .text p {
+  display: inline;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  line-height: 1;
+  font-size: 1vw;
+  text-transform: uppercase;
+  color: var(--b);
+}
+.section2 .image-container .germ {
+  position: absolute;
+  translate: -50% -50%;
+  width: var(--r);
+  height: var(--r);
+  background: var(--t);
+  border-radius: 1000000px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px black;
+}
+.section2 .image-container .germ .black-germ {
+  position: absolute;
+  translate: -50% -50%;
+  top: 50%;
+  left: 50%;
+  width: calc(var(--r) / 2);
+  height: calc(var(--r) / 2);
+  background-color: var(--b);
+  border-radius: 1000000px;
+  transition: width 0.1s ease-in, height 0.1s ease-in, transform 1s ease;
+}
+.section2 .image-container .germ .black-germ:before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  scale: 0;
+  display: block;
+  width: calc(var(--r) / 10);
+  height: calc(var(--r) / 10);
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.section2 .image-container .hoverdiv {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+}
+.section2 .image-container .hoverdiv:hover ~ .germ .black-germ, .section2 .image-container .chatbox:hover ~ .germ .black-germ {
+  width: calc(var(--r) / 1.2) !important;
+  height: calc(var(--r) / 1.2) !important;
+  transition: all 0.5s ease-in;
+}
+.section2 .image-container .hoverdiv:hover ~ .germ .black-germ:before, .section2 .image-container .chatbox:hover ~ .germ .black-germ:before {
+  scale: 1;
+  transition: all 0.5s ease-out;
+}
+
+.section3 {
+  padding-top: 300px;
+  padding-bottom: 200px;
+}
+.section3 p {
+  max-width: 600px;
+  margin-left: 50%;
+}
+.section3 p span {
+  color: var(--gr);
+}
+
+.section4 {
+  position: relative;
+  display: block;
+}
+.section4 .marquee-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  bottom: -50px;
+  width: 100vw;
+  overflow: hidden;
+}
+.section4 .marquee-container .marquee-content {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+.section4 .marquee-container .marquee-content nav {
+  display: flex;
+  width: 100px;
+}
+.section4 .marquee-container .marquee-content nav img {
+  width: 100%;
+}
+.section4 .marquee-container .marquee-content p {
+  font-family: FontHead;
+  font-size: 250px;
+  text-transform: none;
+}
+
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: var(--b);
+}
+.footer .content {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+.footer .content .left {
+  justify-content: center;
+}
+.footer .content .left img {
+  max-width: 800px;
+  width: 100%;
+}
+.footer .content div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.footer .content .right {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer .content .right p {
+  margin-bottom: 100px;
+  max-width: 600px;
+}
+.footer .content .right p span {
+  color: var(--gr);
+}
+.footer .content .right h1 {
+  font-family: FontHead;
+  font-size: 57px;
+  color: var(--t);
+  margin: 0;
+}
+.footer .content .right h1 span {
+  color: var(--gr);
+}
+.footer .bottom {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.footer .bottom p {
+  color: var(--t);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.footer .svg-path {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.footer .svg-path svg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+  opacity: 0;
+}
+.footer .svg-path .flower {
+  position: absolute;
+}

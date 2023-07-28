@@ -1,0 +1,35 @@
+[class^="cursor"]{
+	position: fixed;
+	top: -50%;
+	left: 0;
+	translate: -50% -50%;
+	border-radius: 50%;
+	z-index: 9999;
+	pointer-events: none;
+	cursor: none;
+}
+.cursor-outer{
+	width: 30px;
+	height: 30px;
+	border: 1px solid var(--t);
+	background-color: var(--t);
+	pointer-events: none;
+	cursor: none;
+	mix-blend-mode: difference;
+	transition: scale .5s cubic-bezier(.01,1.62,.63,.79);
+}
+.cursor-outer p{
+	position: fixed;
+	display: inline;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	text-align: center;
+	font-family: Fontt2;
+	font-size: .5rem;
+	font-weight: bold;
+	line-height: 1.4;
+	color: black;
+	scale: 0;
+	transition: scale .1s cubic-bezier(.01,1.62,.63,.79);
+}

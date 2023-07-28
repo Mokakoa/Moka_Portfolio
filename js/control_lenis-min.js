@@ -1,0 +1,1 @@
+const lenis=new Lenis({duration:1.5,easing:i=>1===i?1:1-Math.pow(2,-10*i),direction:"vertical",gestureDirection:"vertical",smooth:!0,smoothTouch:!1,touchMultiplier:2});function raf(i){lenis.raf(i),requestAnimationFrame(raf)}window.lenis=lenis,requestAnimationFrame(raf);
